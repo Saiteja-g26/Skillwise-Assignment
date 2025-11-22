@@ -69,7 +69,7 @@ export const exportProducts = () => {
 export const getProductHistory = (id) => api.get(`/api/products/${id}/history`);
 
 // Authentication API
-export const login = (email, password) => api.post('/api/auth/login', { email, password });
+export const login = (identifier, password) => api.post('/api/auth/login', { identifier, password });
 
 export const register = (username, email, password) =>
   api.post('/api/auth/register', { username, email, password });
